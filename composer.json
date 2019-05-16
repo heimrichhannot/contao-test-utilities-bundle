@@ -1,7 +1,7 @@
 {
   "name": "heimrichhannot/contao-test-utilities-bundle",
   "type": "contao-bundle",
-  "description": "A generic contao filter.",
+  "description": "A bundle containing utilities for easier contao bundle testing.",
   "license": "LGPL-3.0-or-later",
   "require": {
     "php": "^7.1",

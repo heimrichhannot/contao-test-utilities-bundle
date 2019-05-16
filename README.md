@@ -2,6 +2,12 @@
 
 This bundle helps with recurring tasks when testing bundles for contao cms.
 
+## Install
+
+```
+composer require --dev heimrichhannot/contao-test-utilities-bundle
+```
+
 ## Content
 
 ### Mocking objects
