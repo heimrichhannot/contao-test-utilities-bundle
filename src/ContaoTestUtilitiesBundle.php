@@ -12,7 +12,9 @@
 namespace HeimrichHannot\TestUtilitiesBundle;
 
 
-class ContaoTestUtilitiesBundle
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class ContaoTestUtilitiesBundle extends Bundle
 {
 
 }

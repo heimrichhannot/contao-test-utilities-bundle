@@ -12,7 +12,7 @@ This bundle helps with recurring tasks when testing bundles for contao cms.
 \HeimrichHannot\TestUtilitiesBundle\Mock\ModelMockTrait::mockModelObject()
 ```
 
-Returns a model mock with magic getter and setter, isset and row.
+Returns a model mock with magic getter, setter, isset and row.
 
 ### Singletons
 

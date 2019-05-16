@@ -6,14 +6,12 @@
   "require": {
     "php": "^7.1",
     "contao/core-bundle": "^4.4",
+    "symfony/framework-bundle": "^3.4||^4.1",
     "phpunit/phpunit": "^6.5"
   },
   "autoload": {
     "psr-4": {
       "HeimrichHannot\\TestUtilitiesBundle\\": "src/"
     }
-  },
-  "extra": {
-    "contao-manager-plugin": "HeimrichHannot\\TestUtilitiesBundle\\ContaoManager\\Plugin"
   }
 }
