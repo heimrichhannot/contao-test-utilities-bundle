@@ -12,21 +12,31 @@ composer require --dev heimrichhannot/contao-test-utilities-bundle
 
 ### Mocking objects
 
-#### Mock Model instance
+This bundle provide some traits to mock following contao types:
+- models
+- templates
 
 ```php
-\HeimrichHannot\TestUtilitiesBundle\Mock\ModelMockTrait::mockModelObject()
+class Test {
+    use \HeimrichHannot\TestUtilitiesBundle\Mock\ModelMockTrait;
+    use \HeimrichHannot\TestUtilitiesBundle\Mock\TemplateMockTrait;
+    
+    public function testMockTemplate() {
+        $templateMock = $this->mockTemplateObject(\Contao\FrontendTemplate::class, 'ce_test');
+        $templateMock->setName('ce_skip');
+        $templateMock->getName();
+        $templateMock->setData(['foo' => 'bar']);
+        $templateMock->getData();
+        // and __get, __set, __isset
+    }
+    
+    public function testModelMock() {
+        $model = $this->mockModelObject(\Contao\PageModel::class, []);
+        $model->row();
+        // and __get, __set, __isset
+    }
+}
 ```
-
-Returns a model mock with magic getter, setter, isset and row.
-
-#### Mock template instance
-
-```php
-\HeimrichHannot\TestUtilitiesBundle\Mock\TemplateMockTrait::mockTemplateObject(string $class, string $strTemplate = ''): MockObject
-```
-
-Returns a mock object with working methods imitating a template: `getData`, `setData`, `getName`, `setName`, `__get`, `__set`, `__isset`
 
 ### Singletons
 
