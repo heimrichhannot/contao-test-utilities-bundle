@@ -20,6 +20,14 @@ composer require --dev heimrichhannot/contao-test-utilities-bundle
 
 Returns a model mock with magic getter, setter, isset and row.
 
+#### Mock template instance
+
+```php
+\HeimrichHannot\TestUtilitiesBundle\Mock\TemplateMockTrait::mockTemplateObject(string $class, string $strTemplate = ''): MockObject
+```
+
+Returns a mock object with working methods imitating a template: `getData`, `setData`, `getName`, `setName`, `__get`, `__set`, `__isset`
+
 ### Singletons
 
 #### Reset Files singleton
