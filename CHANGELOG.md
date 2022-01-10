@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+[0.1.4] - 2022-01-10
+- Changed: allow phpunit 7 and 8
+- Changed: allow symfony 5
+
 [0.1.3] - 2021-04-16
 - added TemplateMockTrait
 
