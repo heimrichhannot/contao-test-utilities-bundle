@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+[0.1.6] - 2022-10-07
+- Changed: allow phpunit 9
+
 [0.1.5] - 2022-03-07
 - Changed: allow php 8
 
