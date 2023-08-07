@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+[0.1.7] - 2023-08-07
+- Changed: allow contao 5
+- Changed: allow symfony 6
+
 [0.1.6] - 2022-10-07
 - Changed: allow phpunit 9
 
