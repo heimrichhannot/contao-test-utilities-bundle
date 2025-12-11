@@ -6,6 +6,7 @@ use Contao\Rector\Set\ContaoLevelSetList;
 use Contao\Rector\Set\ContaoSetList;
 use Rector\Config\RectorConfig;
 use Rector\Php84\Rector\Param\ExplicitNullableParamTypeRector;
+use Rector\PHPUnit\PHPUnit100\Rector\Class_\ParentTestClassConstructorRector;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRector;
 use Rector\ValueObject\PhpVersion;
@@ -36,5 +37,8 @@ return RectorConfig::configure()
         LevelSetList::UP_TO_PHP_81,
         ContaoLevelSetList::UP_TO_CONTAO_413,
         ContaoSetList::FQCN,
+    ])
+    ->withSkip([
+        ParentTestClassConstructorRector::class
     ])
 ;
