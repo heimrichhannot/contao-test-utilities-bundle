@@ -21,7 +21,7 @@ trait ResetFilesSingletonTrait
      *
      * @throws \ReflectionException
      */
-    protected function resetFileSingletonInstance(ContainerBuilder $container)
+    protected function resetFileSingletonInstance(ContainerBuilder $container): void
     {
         $filesReflection = new \ReflectionClass(Files::class);
         $instanceProperty = $filesReflection->getProperty('objInstance');

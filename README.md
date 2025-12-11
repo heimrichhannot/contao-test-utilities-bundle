@@ -1,5 +1,7 @@
 # Contao Test Utilities Bundle
 
+![](https://img.shields.io/badge/PHPStan-level%2010-brightgreen.svg?style=flat)
+
 This bundle helps with recurring tasks when testing bundles for contao cms.
 
 ## Install
