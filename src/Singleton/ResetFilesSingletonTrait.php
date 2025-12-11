@@ -25,7 +25,6 @@ trait ResetFilesSingletonTrait
     {
         $filesReflection = new \ReflectionClass(Files::class);
         $instanceProperty = $filesReflection->getProperty('objInstance');
-        $instanceProperty->setAccessible(true);
         $instanceProperty->setValue(null, null);
         System::setContainer($container);
         Files::getInstance();
