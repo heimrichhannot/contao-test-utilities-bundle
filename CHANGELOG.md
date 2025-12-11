@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+[0.1.8] - 2025-12-11
+- Changed: update dependencies
+
 [0.1.7] - 2023-08-07
 - Changed: allow contao 5
 - Changed: allow symfony 6
