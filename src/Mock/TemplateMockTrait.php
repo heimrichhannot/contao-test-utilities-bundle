@@ -18,9 +18,10 @@ use PHPUnit\Framework\MockObject\MockObject;
 trait TemplateMockTrait
 {
     /**
-     * @param string $class
+     * @template T of Template
+     * @param class-string<T> $class
      * @param string $strTemplate
-     * @return MockObject|Template
+     * @return MockObject&T
      */
     protected function mockTemplateObject(string $class, string $strTemplate = ''): MockObject
     {
