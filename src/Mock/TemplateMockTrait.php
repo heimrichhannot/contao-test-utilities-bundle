@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Contao Open Source CMS
+ * Contao Open Source CMS.
  *
  * Copyright (c) 2021 Heimrich & Hannot GmbH
  *
@@ -8,9 +9,7 @@
  * @license http://www.gnu.org/licences/lgpl-3.0.html LGPL
  */
 
-
 namespace HeimrichHannot\TestUtilitiesBundle\Mock;
-
 
 use Contao\Template;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -19,8 +18,9 @@ trait TemplateMockTrait
 {
     /**
      * @template T of Template
+     *
      * @param class-string<T> $class
-     * @param string $strTemplate
+     *
      * @return MockObject&T
      */
     protected function mockTemplateObject(string $class, string $strTemplate = ''): MockObject

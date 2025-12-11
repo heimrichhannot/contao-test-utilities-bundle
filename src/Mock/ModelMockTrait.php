@@ -9,13 +9,13 @@
 namespace HeimrichHannot\TestUtilitiesBundle\Mock;
 
 use Contao\Model;
-use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\MockObject\MockObject;
 
 trait ModelMockTrait
 {
     /**
      * Mocks a class with magic properties.
+     *
      * @param class-string<Model> $class
      * @param array<string,mixed> $properties
      */

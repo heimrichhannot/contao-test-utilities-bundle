@@ -17,8 +17,6 @@ trait ResetFilesSingletonTrait
     /**
      * Reset the contao Files singleton.
      *
-     * @param ContainerBuilder $container
-     *
      * @throws \ReflectionException
      */
     protected function resetFileSingletonInstance(ContainerBuilder $container): void

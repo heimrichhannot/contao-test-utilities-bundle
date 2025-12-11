@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Contao Open Source CMS
+ * Contao Open Source CMS.
  *
  * Copyright (c) 2019 Heimrich & Hannot GmbH
  *
@@ -8,13 +9,10 @@
  * @license http://www.gnu.org/licences/lgpl-3.0.html LGPL
  */
 
-
 namespace HeimrichHannot\TestUtilitiesBundle;
-
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class ContaoTestUtilitiesBundle extends Bundle
 {
-
 }
